@@ -1,7 +1,7 @@
 import re, json, urllib.request, os
 
 pattern = re.compile(r"Failed password .* from (\d+\.\d+\.\d+\.\d+)") # detects IP addresses
-limit = 3000 # number of attacks to retrieve geolocation information on (limit 1000 in a day)
+limit = 1000 # number of attacks to retrieve geolocation information on (limit 1000 in a day)
 
 IPs = [] # IP of an individual log entry
 attacks = [] # IP, city, region, country, and organization of an individual IP
