@@ -49,7 +49,7 @@ for IP in IPs[ 0 : limit ]:
     j = json.loads(data)
 
     # removes commas from data
-    coordinates = j["loc"].replace("," " ")
+    coordinates = j["loc"].replace(",", " ")
     city = j["city"].replace(",", "")
     region = j["region"].replace(",", "")
     country = codes[j["country"]].replace(",", "")
